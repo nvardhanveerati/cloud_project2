@@ -1,10 +1,3 @@
-# Cloud Computing: Group Project 2 - PAAS
-
-### Group Members
-#### Nithya Vardhan Reddy Veerati
-#### Anuj Dharurkar
-#### Kshitij Srivastava
-
 ### **Overview:**
 In this project, a cloud application to was developed that helps recognise individuals in videos. It is developed on the PAAS cloud service of the Amazon Web Service which is Lambda. 
 The users of this application would upload files to an S3 bucket. Each time a video is uploaded to this bucket, the lambda code gets triggered. This function then downloads that video, extracts images from it, performs facial recognition on the frames, queries details of the resultant person and uploads the results to the output s3 bucket in the form of a CSV file.
@@ -29,16 +22,3 @@ AWS DynamoDB table:          new_students
 python workload.py
 ```
 5. Open the output bucket on the browser to find the respective academic records being generated.
-
-### **Individual Member's tasks:**
-#### Anuj Dharurkar
-- Setup DynamoDB table and insert all the values
-- Write the code to extract the results from the database.
-#### Kshitij Srivastava
-- Setup AWS S3 buckets.
-- Develop the code to extract frames from the video, perform face recognition and updload the db results to the output bucket.
-- Perform unit tests and fixing bugs
-#### Anuj Dharurkar
-- Research about ECR service.
-- Create the docker images, upload to ECR and update the lambda function to point to the right image
-- Perform unit tests and fixing bugs
